@@ -78,7 +78,7 @@ public class Otaku extends Robot {
 		double myx = getX();
 		double myy = getY();
 		double w = fi.width - 30;
-		double h = fi.height - 50;
+		double h = fi.height - 30;
 		double x = myx - w / 2;
 		double y = myy - h / 2;
 		int getaZero = 50;
@@ -125,7 +125,6 @@ public class Otaku extends Robot {
 		int eny = (int) (myy + en.dis * Math.cos(radi * Math.PI / 180));
 		int enx = (int) (myx + en.dis * Math.sin(radi * Math.PI / 180));
 		en.setEnemyInfo(enx, eny, endis, enener, enname);
-		fire(1);
 	}
 
 	/**
