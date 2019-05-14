@@ -32,11 +32,11 @@ Node* AllocNode(void) {
 }
 
 // 任意の位置に要素を挿入する関数
-void InsertAfter(List* list, Node *a, const Member* x) {
+void InsertAfter(List* list, Node *p, const Member* x) {
 	list->crnt = AllocNode();
 	list->crnt->data = *x;
-	list->crnt->next = a->next;
-	a->next = list->crnt;
+	list->crnt->next = p->next;
+	p->next = list->crnt;
 	list->crnt = NULL;
 }
 
